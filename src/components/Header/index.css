@@ -1,0 +1,6 @@
+.header-cont{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px 25px;
+}

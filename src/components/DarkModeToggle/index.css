@@ -1,0 +1,24 @@
+.toggle-button {
+    padding: 10px;
+    border: none;
+    background: #0288d1;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode .toggle-button {
+    background: #039be5;
+}
+
+.toggle-button svg {
+    margin-right: 5px;
+}
+
+.toggle-button:hover {
+    background: #0277bd;
+}
