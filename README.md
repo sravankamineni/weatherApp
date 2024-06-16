@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+WeatherApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WeatherApp is a React-based weather forecasting application that fetches current weather information for any city or zip code. It provides weather details such as temperature, weather description, humidity, wind speed, and more. Additionally, the app supports background changes based on temperature and displays weather icons dynamically.
 
-## Available Scripts
+Features:-
+1) Displays weather information based on user input (city name or zip code).
+2) Automatically fetches and displays weather data for the user's current location upon initial load.
+3) Weather animations and icons based on weather conditions.
+4) Responsive design suitable for desktop, tablet, and mobile devices.
 
-In the project directory, you can run:
+Technologies Used:-
+1) React: For building the user interface.
+2) Axios: For making API requests.
+3) OpenWeather API: For fetching weather data.
+4) React Icons: For weather icons and other UI elements.
+5) Lottie Files: For weather animations.
+6) CSS: For styling and layout.
+7) Geolocation API: For fetching the user's current location.
 
-### `npm start`
+Instructions to Run the Application Locally
+Prerequisites:-
+Node.js (v12 or higher)
+npm (Node Package Manager)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Setup
+1) Clone the repository: git clone https://github.com/your-username/weather-app.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2) Navigate to the project directory: cd weather-app
 
-### `npm test`
+3) Install dependencies: npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4) Get your OpenWeather API key:
+    Sign up at OpenWeather to get an API key.
+    Create a .env file at the root of your project and add your OpenWeather API key:- REACT_APP_OPENWEATHER_API_KEY=your_openweather_api_key
 
-### `npm run build`
+5) Run the application: npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app should open in your default browser at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Usage:-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-> Enter a city name or zip code into the search field and click "Search" to fetch weather data for that location.
+-> The app will display the current weather conditions, including temperature, weather description, humidity, and wind speed.
+-> Upon initial load, the app will attempt to fetch weather data for your current location using the Geolocation API.
 
-### `npm run eject`
+Known Issues and Limitations:-
+1) API Rate Limits: The OpenWeather API has rate limits which might restrict the number of requests that can be made in a given time frame.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2) Geolocation Permission: If the user denies permission for geolocation, the app cannot fetch weather data for the current location.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3) Browser Compatibility: Ensure your browser supports the Geolocation API for location-based weather fetching.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4) Error Handling: The application provides basic error messages for invalid locations or API failures but may need more detailed error handling for other issues.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5) Animations: The Lottie animations may not cover all weather conditions perfectly and might require additional customization.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements
+1) Dark Mode: Implement a dark mode feature for the user interface.
